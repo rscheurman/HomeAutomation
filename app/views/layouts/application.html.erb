@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Spec Ops Drones</title>
     <%= csrf_meta_tags %>
 
@@ -9,14 +12,24 @@
   </head>
 
   <body>
-    <h1>Spec Ops Drones</h1>
-    <hr>
+    <div class="site-wrapper">
 
-    <%= render 'shared/nav' %>
+      <div class="site-wrapper-inner">
 
-    <%= render 'shared/alerts' %>
+        <div class="cover-container">
 
-    <%= yield %>
+          <%= render 'shared/application_nav' %>
+
+          <%= render 'shared/alerts' %>
+
+          <%= render 'shared/footer' %>
+
+          <%= yield %>
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 </html>
